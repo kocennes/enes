@@ -1,0 +1,23 @@
+#basit_projeler
+
+def ilk_ve_son_harf_degistirme(a):
+    b=a[0]
+    c=a[-1]
+    d=a[1:-1]
+    e=c+d+b
+    return e
+
+print(ilk_ve_son_harf_degistirme("eneskoç"))
+
+def tersalma(liste):
+    uzunluk=len(liste)
+    ters=""
+    for i in range(uzunluk-1,-1,-1):
+        ters+=liste[i]
+    return ters
+print(tersalma("12345"))
+
+def realters(liste2):
+    liste2=liste2[::-1]
+    return liste2
+print(realters("12345"))
